@@ -20,3 +20,27 @@ class OnEndEvent extends PainterEvent {
   final DragEndDetails details;
   OnEndEvent({required this.details, required this.context});
 }
+
+class SkechWidthEvent extends PainterEvent {
+  final double width;
+  SkechWidthEvent({required this.width});
+}
+
+class ChangeColorEvent extends PainterEvent {
+  final Color color;
+  ChangeColorEvent({required this.color});
+}
+
+class ChangeModeEvent extends PainterEvent {
+  final DrawingMode mode;
+  ChangeModeEvent({required this.mode});
+}
+
+class SetFilledEvent extends PainterEvent {
+  final bool filled;
+  SetFilledEvent({required this.filled});
+}
+
+class UndoEvent extends PainterEvent {}
+
+class ClearEvent extends PainterEvent {}

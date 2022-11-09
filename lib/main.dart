@@ -59,8 +59,8 @@ class _MyHomePageState extends State<MyHomePage> {
                 )),
           ),
           AnimatedPositioned(
-              top: (height - 500) / 2,
-              left: !show ? -300 : (width - 300) / 2,
+              top: (height - 600) / 2,
+              left: !show ? -374 : (width - 350) / 2,
               curve: Curves.linearToEaseOut,
               duration: const Duration(milliseconds: 600),
               child: const PainterTools())
@@ -69,3 +69,4 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+

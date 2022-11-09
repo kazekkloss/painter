@@ -2,9 +2,8 @@ part of 'painter_bloc.dart';
 
 @immutable
 class PainterState {
-  final List<DrawnLine> lines;
-  final DrawnLine line;
+  final List<Sketch> listSketch;
+  final Sketch sketch;
 
-  const PainterState({required this.line, required this.lines});
+  const PainterState({required this.sketch, required this.listSketch});
 }
-
